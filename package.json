@@ -1,0 +1,12 @@
+{
+  "name": "device-repairing",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix forend",
+    "dev:webpack": "npm run dev:webpack --prefix forend",
+    "dev:all": "npx concurrently -n backend,frontend -c blue,green \"npm run dev --prefix backend\" \"npm run dev --prefix forend\"",
+    "build": "npm run build --prefix forend",
+    "start": "npm run start --prefix forend",
+    "backend": "npm run dev --prefix backend"
+  }
+}
